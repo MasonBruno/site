@@ -1,91 +1,158 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 
 <head>
-    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="./favicon.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MsBruno</title>
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="style.css">
+
+```
+<link rel="stylesheet" href="./style.css">
+```
+
 </head>
 
 <body>
     <canvas id="matrix" class="matrix-bg"></canvas>
 
-    <div class="page">
-        <div class="container">
+```
+<div class="page">
+    <div class="container">
 
-               <div class="profile">
-                <img src="assets/pfp.jpg" alt="FAB" class="avatar" fetchpriority="high">
-                <div class="nick-with-button">
-                    <div class="nickname">ꜰᴀʙ</div>
-                    <button class="puro-btn" id="puroToggle" onclick="togglePuro()" title="Info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9"></polyline>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+        <div class="profile">
+            <img
+                src="./assets/pfp.jpg"
+                alt="FAB"
+                class="avatar"
+                fetchpriority="high"
+            >
 
+            <div class="nick-with-button">
+                <div class="nickname">ꜰᴀʙ</div>
 
-            <div class="puro-container" id="puroContainer">
-              <div class="puro-text">
-                <span class="puro-line">he / him</span>
-                <span class="puro-line">emo edm</span>
-
-              </div>
-            </div>
-
-            <div class="social-links">
-                <a href="/go/tg" target="_blank" rel="noopener" class="social-btn" title="Telegram">
-                    <svg width="1em" height="1em">
-                      <use href="assets/tg.svg#icon-telegram"></use>
-                   </svg>
-                </a>
-                <a href="/go/sc" target="_blank" rel="noopener" class="social-btn" title="SoundCloud">
-                    <svg width="1em" height="1em">
-                      <use href="assets/sc.svg#icon-soundcloud"></use>
-                   </svg>
-                </a>
-                <a href="/go/tt" target="_blank" rel="noopener" class="social-btn" title="TikTok">
-                    <svg width="1em" height="1em">
-                      <use href="assets/tt.svg#icon-tiktok"></use>
-                   </svg>
-                </a>
-            </div>
-
-           <div class="announce">
-                <textarea id="message" placeholder="Message..."></textarea>
-                <button id="sendBtn" onclick="sendMessage()" class="send-btn-icon">
-                    <svg width="1em" height="1em">
-                      <use href="/assets/tg.svg#icon-telegram"></use>
+                <button
+                    class="puro-btn"
+                    id="puroToggle"
+                    onclick="togglePuro()"
+                    title="Info"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <polyline points="6 9 12 15 18 9"></polyline>
                     </svg>
                 </button>
             </div>
-
         </div>
 
-     <div class="footer">
-        © MsBruno · By Mason
-        Bruno :D | @MsBruno
-        <svg width="18" height="18" class="discord-svg">
-            <use href="/assets/ds.svg#icon-discord"></use>
+        <div class="puro-container" id="puroContainer">
+            <div class="puro-text">
+                <span class="puro-line">he / him</span>
+                <span class="puro-line">emo edm</span>
+            </div>
+        </div>
+
+       ```html
+<div class="social-links">
+
+    <a
+        href="https://t.me/your_username"
+        target="_blank"
+        rel="noopener"
+        class="social-btn"
+        title="Telegram"
+    >
+        <svg width="1em" height="1em">
+            <use href="./assets/tg.svg#icon-telegram"></use>
         </svg>
+    </a>
+
+    <a
+        href="https://soundcloud.com/your_username"
+        target="_blank"
+        rel="noopener"
+        class="social-btn"
+        title="SoundCloud"
+    >
+        <svg width="1em" height="1em">
+            <use href="./assets/sc.svg#icon-soundcloud"></use>
+        </svg>
+    </a>
+
+    <a
+        href="https://www.tiktok.com/@your_username"
+        target="_blank"
+        rel="noopener"
+        class="social-btn"
+        title="TikTok"
+    >
+        <svg width="1em" height="1em">
+            <use href="./assets/tt.svg#icon-tiktok"></use>
+        </svg>
+    </a>
+
+</div>
+
+        <div class="announce">
+            <textarea
+                id="message"
+                placeholder="Message..."
+            ></textarea>
+
+            <button
+                id="sendBtn"
+                onclick="sendMessage()"
+                class="send-btn-icon"
+            >
+                <svg width="1em" height="1em">
+                    <use href="./assets/tg.svg#icon-telegram"></use>
+                </svg>
+            </button>
+        </div>
+
     </div>
 
+    <div class="footer">
+        © MsBruno · By Mason
+        Bruno :D | @MsBruno
+
+        <svg
+            width="18"
+            height="18"
+            class="discord-svg"
+        >
+            <use href="./assets/ds.svg#icon-discord"></use>
+        </svg>
+    </div>
+</div>
+
 <noscript>
-  <input type="checkbox" id="noscript-toggle">
-  <div class="noscript-banner">
-    <p>JavaScript отключён.</p>
-    <p>Для корректной работы сайта включите JS в настройках браузера.</p>
-    <label for="noscript-toggle">Понятно</label>
-  </div>
+    <input type="checkbox" id="noscript-toggle">
+
+    <div class="noscript-banner">
+        <p>JavaScript отключён.</p>
+        <p>Для корректной работы сайта включите JS в настройках браузера.</p>
+
+        <label for="noscript-toggle">
+            Понятно
+        </label>
+    </div>
 </noscript>
 
-    <script src="player.js"></script>
-    <script src="matrix.js"></script>
-    <script src="btn.js"></script>
+<script src="./player.js"></script>
+<script src="./matrix.js"></script>
+<script src="./btn.js"></script>
+```
+
 </body>
 
 </html>
